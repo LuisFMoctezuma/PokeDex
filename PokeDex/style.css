@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #d94230;
+}
+
+.container {
+    width: 350px;
+    position: absolute;
+    transform: translate(-50%, -45%);
+    left: 50%;
+    top: 50%;
+}
+
+#card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: radial-gradient(circle, #d94230 55%, #e9e9e9 100%);
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 10px;
+    border: 5px solid #000;
+    margin: auto;
+}
+
+#card img{
+    display:block;
+    width: 180px;
+    max-height: 200px;
+    position: relative;
+    margin: 20px auto;
+}
+
+.hp{
+    width: 80px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 30px;
+    margin-left: auto;
+    font-weight: 400;
+
+}
+
+.hp span{
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    font-weight: 700;
+}
+
+.types{
+    display:flex;
+    justify-content: space-around;
+    margin: 20px 0 40px 0;
+}
+
+.types span{
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    font-weight: 900;
+}
+
+.poke-name{
+    text-align: center;
+    font-weight: 600;
+}
+
+.stats{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.stats p{
+    color: #404060;
+}
+
+#btn,
+#btn_2{
+    display: block;
+    padding: 15px 40px;
+    font-size: 18px;
+    background-color: #101010;
+    color: #ffffff;
+    position: relative;
+    margin: 30px auto;
+    border: none;
+    border-radius: 5px;
+
+}
+
+#btn:hover,
+#btn_2:hover {
+    background-color: rgb(107, 107, 105);
+  }
+
+.label {
+    font-size: 18px;
+    padding: 30px 100px;
+    display: block;
+    border-radius: 5px;
+    font-weight: 400;
+    color:rgb(0, 0, 0);
+}
+
+#pokemon {
+    font-size: 18px;
+    display: block;
+    padding: 2% 20%;
+    border-radius: 5px;
+    font-weight: 400;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 500px) {
+    .container{
+        width: 5%;
+        height: 50%;
+        margin: 0;
+    }
+
+    #card{
+        display: inline-flex;
+        width: 100%;
+        margin: auto;
+        font-size: .8em;
+    }
+  }

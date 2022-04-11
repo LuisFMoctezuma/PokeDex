@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/icon.ico">
+</head>
+
+<body>
+    <div class="container">
+        <div id="card">
+            <p class="hp">
+                <span>HP</span>
+                80
+            </p>
+            <img src="img/not-found.png"
+                alt="">
+            <h2 class="poke-name">
+                Name
+            </h2>
+            <div class="types">
+                <span>tipo 1</span>
+                <span>tipo 2</span>
+            </div>
+            <div class="stats">
+                <div>
+                    <h3>60</h3>
+                    <p>Attack</p>
+                </div>
+                <div>
+                    <h3>60</h3>
+                    <p>Defense</p>
+                </div>
+                <div>
+                    <h3>60</h3>
+                    <p>Speed</p>
+                </div>
+
+            </div>
+        </div>
+        <label for="pokemon" class="label">Type a pokemon</label>
+        <input id="pokemon" type="text">
+        <div class="buttons">
+            <button id="btn" onclick="getPokeData(pokemon.value.toLowerCase())">Search</button>
+            <button id="btn_2" onclick="getPokeData(parseInt(Math.floor(Math.random() * 150) + 1))">Find</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
